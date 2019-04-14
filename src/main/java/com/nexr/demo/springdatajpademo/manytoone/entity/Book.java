@@ -1,12 +1,12 @@
-package com.nexr.demo.springdatajpademo.entity;
+package com.nexr.demo.springdatajpademo.manytoone.entity;
 
 import javax.persistence.*;
 
 @Entity
 public class Book {
 
+    //단 방향 Book -> Category
     public Book(){
-
     }
 
     @Id @GeneratedValue
@@ -18,6 +18,7 @@ public class Book {
     //Category 정보는 빼고 싶을 때 (fetch = FetchType.LAZY) ByteBuddyInterceptor Exception
     // Res 객체로 converting
     @ManyToOne()
+    @JoinColumn(name = "category_id")
     private Category category;
 
     public Category getCategory() {

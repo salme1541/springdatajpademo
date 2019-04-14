@@ -1,16 +1,14 @@
-package com.nexr.demo.springdatajpademo.controller;
+package com.nexr.demo.springdatajpademo.manytoone.controller;
 
-import com.nexr.demo.springdatajpademo.dao.BookRepository;
-import com.nexr.demo.springdatajpademo.dao.CategoryRepository;
-import com.nexr.demo.springdatajpademo.entity.Book;
-import com.nexr.demo.springdatajpademo.entity.BookRes;
-import com.nexr.demo.springdatajpademo.entity.Category;
+import com.nexr.demo.springdatajpademo.manytoone.dao.BookRepository;
+import com.nexr.demo.springdatajpademo.manytoone.dao.CategoryRepository;
+import com.nexr.demo.springdatajpademo.manytoone.entity.Book;
+import com.nexr.demo.springdatajpademo.manytoone.entity.Category;
 import org.modelmapper.ModelMapper;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
-import java.util.stream.Collectors;
 
 @RestController
 public class BookController {

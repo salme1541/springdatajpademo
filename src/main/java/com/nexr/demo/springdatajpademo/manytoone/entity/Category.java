@@ -1,4 +1,4 @@
-package com.nexr.demo.springdatajpademo.entity;
+package com.nexr.demo.springdatajpademo.manytoone.entity;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

@@ -1,4 +1,4 @@
-package com.nexr.demo.springdatajpademo.entity;
+package com.nexr.demo.springdatajpademo.manytoone.entity;
 
 public class BookRes {
     private Long id;

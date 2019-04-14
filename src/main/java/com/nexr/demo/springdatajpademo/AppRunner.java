@@ -1,9 +1,9 @@
 package com.nexr.demo.springdatajpademo;
 
-import com.nexr.demo.springdatajpademo.dao.BookRepository;
-import com.nexr.demo.springdatajpademo.dao.CategoryRepository;
-import com.nexr.demo.springdatajpademo.entity.Book;
-import com.nexr.demo.springdatajpademo.entity.Category;
+import com.nexr.demo.springdatajpademo.manytoone.dao.BookRepository;
+import com.nexr.demo.springdatajpademo.manytoone.dao.CategoryRepository;
+import com.nexr.demo.springdatajpademo.manytoone.entity.Book;
+import com.nexr.demo.springdatajpademo.manytoone.entity.Category;
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
 import org.springframework.stereotype.Component;
