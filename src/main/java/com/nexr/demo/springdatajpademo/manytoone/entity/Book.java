@@ -15,7 +15,7 @@ public class Book {
     private String title;
 
 
-    //Category 정보는 빼고 싶을 때 (fetch = FetchType.LAZY) ByteBuddyInterceptor Exception
+    //Category 정보는 빼고 싶을 때 (fetch = FetchType.LAZY) 그냥 쓰면 ByteBuddyInterceptor Exception 발생하니 Dto 로 변환해줘야함
     // Res 객체로 converting
     @ManyToOne()
     @JoinColumn(name = "category_id")
