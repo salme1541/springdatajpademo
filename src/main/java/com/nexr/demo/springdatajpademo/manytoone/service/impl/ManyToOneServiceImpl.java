@@ -7,6 +7,8 @@ import com.nexr.demo.springdatajpademo.manytoone.entity.Category;
 import com.nexr.demo.springdatajpademo.manytoone.service.ManyToOneService;
 import org.springframework.stereotype.Service;
 
+import java.util.Optional;
+
 @Service("BookService")
 public class ManyToOneServiceImpl implements ManyToOneService {
     private final BookRepository bookRepository;
@@ -15,6 +17,13 @@ public class ManyToOneServiceImpl implements ManyToOneService {
     public ManyToOneServiceImpl(BookRepository bookRepository, CategoryRepository categoryRepository) {
         this.bookRepository = bookRepository;
         this.categoryRepository = categoryRepository;
+    }
+
+    @Override
+    public Book getBookById(Long id) {
+        Optional<Book> byId = bookRepository.findById(id);
+
+        return byId.orElse(new Book());
     }
 
     @Override
