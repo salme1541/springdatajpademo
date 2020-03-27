@@ -22,26 +22,26 @@ public class AppRunner implements ApplicationRunner {
     @Override
     public void run(ApplicationArguments args) throws Exception {
         //Category 생성 및 저장
-        Category cate1 = new Category();
-        cate1.setName("coding");
-        Category cate2 = new Category();
-        cate2.setName("data");
-
-        categoryRepository.save(cate1);
-        categoryRepository.save(cate2);
-
-        //Book 생성
-        Book book1 = new Book();
-        book1.setTitle("스프링 Jpa");
-        Book book2 = new Book();
-        book2.setTitle("Data Lake");
-
-        //Book에 Category 설정
-        book1.setCategory(cate1);
-        book2.setCategory(cate2);
-
-        //Book 저장
-        bookRepository.save(book1);
-        bookRepository.save(book2);
+//        Category cate1 = new Category();
+//        cate1.setName("coding");
+//        Category cate2 = new Category();
+//        cate2.setName("data");
+//
+//        categoryRepository.save(cate1);
+//        categoryRepository.save(cate2);
+//
+//        //Book 생성
+//        Book book1 = new Book();
+//        book1.setTitle("스프링 Jpa");
+//        Book book2 = new Book();
+//        book2.setTitle("Data Lake");
+//
+//        //Book에 Category 설정
+//        book1.setCategory(cate1);
+//        book2.setCategory(cate2);
+//
+//        //Book 저장
+//        bookRepository.save(book1);
+//        bookRepository.save(book2);
     }
 }

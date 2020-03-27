@@ -8,7 +8,6 @@ import javax.persistence.Id;
 public class Category {
 
     public Category(){
-
     }
 
     @Id @GeneratedValue

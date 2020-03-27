@@ -1,0 +1,24 @@
+#Book Request
+
+POST http://localhost:8081/books
+Content-Type: application/json
+
+< ./book_create.json
+###
+
+POST http://localhost:8081/books
+Content-Type: application/json
+
+< ./book_create_with_category.json
+###
+
+GET http://localhost:8081/books
+Content-Type: application/json
+
+###
+
+PUT http://localhost:8081/books?id=2
+Content-Type: application/json
+
+< ./book_update.json
+###

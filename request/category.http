@@ -1,0 +1,8 @@
+#Book Request
+
+POST http://localhost:8081/categories
+Content-Type: application/json
+
+< ./category_create.json
+###
+
