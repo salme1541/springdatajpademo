@@ -8,6 +8,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class CategoryController {
+
+    //마스터 카테고리 수정
     private final CategoryService categoryService;
 
     public CategoryController(CategoryService categoryService) {
